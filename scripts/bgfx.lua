@@ -39,6 +39,10 @@ function bgfxProjectBase(_kind, _defines)
 
 	kind (_kind)
 
+	defines {
+		"BGFX_CONFIG_MULTITHREADED=0",
+	}
+
 	if _kind == "SharedLib" then
 		defines {
 			"BGFX_SHARED_LIB_BUILD=1",
