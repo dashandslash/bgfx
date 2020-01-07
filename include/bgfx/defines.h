@@ -432,6 +432,7 @@
 /// This flag specifies where flip occurs. Default behavior is that flip occurs
 /// before rendering new frame. This flag only has effect when `BGFX_CONFIG_MULTITHREADED=0`.
 #define BGFX_RESET_FLIP_AFTER_RENDER        UINT32_C(0x00004000)
+#define BGFX_RESET_NO_FLIP			        UINT32_C(0x00004001) // avoid flip
 #define BGFX_RESET_SRGB_BACKBUFFER          UINT32_C(0x00008000) //!< Enable sRGB backbuffer.
 #define BGFX_RESET_HDR10                    UINT32_C(0x00010000) //!< Enable HDR10 rendering.
 #define BGFX_RESET_HIDPI                    UINT32_C(0x00020000) //!< Enable HiDPI rendering.

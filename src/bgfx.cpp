@@ -2239,9 +2239,11 @@ namespace bgfx
 		if (m_rendererInitialized
 		&& !m_flipped)
 		{
-			m_renderCtx->flip();
-			m_flipped = true;
-
+            if(!BGFX_RESET_NO_FLIP)
+            {
+                m_renderCtx->flip();
+                m_flipped = true;
+            }
 			if (m_renderCtx->isDeviceRemoved() )
 			{
 				// Something horribly went wrong, fallback to noop renderer.
