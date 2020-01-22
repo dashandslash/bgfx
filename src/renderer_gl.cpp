@@ -2695,6 +2695,7 @@ BX_TRACE("%d, %d, %d, %s", _array, _srgb, _mipAutogen, getName(_format) );
 					m_needPresent = false;
 				}
 			}
+			m_glctx.makeCurrent(NULL);
 		}
 
 		void createIndexBuffer(IndexBufferHandle _handle, const Memory* _mem, uint16_t _flags) override
