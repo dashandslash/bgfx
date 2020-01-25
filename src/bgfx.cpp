@@ -2288,7 +2288,7 @@ namespace bgfx
 		if (!m_flipAfterRender)
 		{
 			BGFX_PROFILER_SCOPE("bgfx/flip", 0xff2040ff);
-			flip();
+			// flip();
 		}
 
 		if (apiSemWait(_msecs) )
@@ -2315,7 +2315,7 @@ namespace bgfx
 			if (m_flipAfterRender)
 			{
 				BGFX_PROFILER_SCOPE("bgfx/flip", 0xff2040ff);
-				flip();
+				// flip();
 			}
 		}
 		else
